@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NotesActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@drawable/custom_toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <android.support.design.widget.CoordinatorLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyler_view"
+            ></android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.FloatingActionButton
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab_button"
+        android:layout_gravity="end|bottom"
+        android:backgroundTint="#FFB41DFF"
+        android:layout_margin="20sp"
+        android:src="@drawable/ic_action_name" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>
